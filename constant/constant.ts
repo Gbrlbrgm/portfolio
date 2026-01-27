@@ -34,17 +34,17 @@ export const NavLinks = [
 export const ServicesData = [
   {
     id: 1,
-    icon: "/",
+    icon: "/images/web_dev.png",
     name: "Web Development",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "Specialized in developing responsive interfaces using React, Next.js and Tailwind CSS. Performance-focused and maintainable code.",
   },
   {
     id: 2,
-    icon: "/",
-    name: "Mobile App Development",
+    icon: "/images/software_engineering.png",
+    name: "Software Engineering",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "Expert in building scalable systems with Node.js, Express, Nest.js, PostgreSQL, Docker and more. Best practices and design patterns.",
   },
 ];
 
