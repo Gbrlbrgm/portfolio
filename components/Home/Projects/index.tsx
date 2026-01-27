@@ -9,8 +9,13 @@ const Projects = () => {
         A small selection of recent <br /> <span>projects</span>
       </h1>
       <div className="w-[70%] mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 mt-16">
-        {ProjectsData.map((project) => (
-          <div key={project.id}>
+        {ProjectsData.map((project, i) => (
+          <div
+            data-aos="fade-up"
+            data-aos-anchor-placement="top-center"
+            data-aos-delay={i * 100}
+            key={project.id}
+          >
             <Image
               src={project.image}
               alt="img"
