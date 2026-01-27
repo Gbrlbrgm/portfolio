@@ -47,3 +47,12 @@ export const ServicesData = [
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
   },
 ];
+
+export const ProjectsData = [
+  {
+    id: 1,
+    image: "/",
+    title: "Project Name",
+    category: "Apps, UI/UX",
+  },
+];
