@@ -7,7 +7,7 @@ import ParticleBackground from "./ParticleBackground";
 
 const Hero = () => {
   return (
-    <div className="relative h-screen flex items-center justify-center text-white overflow-hidden flex-col">
+    <div className="relative mt-50 flex items-center justify-center text-white overflow-hidden flex-col">
       <ParticleBackground />
       <div className="relative z-10 flex flex-col items-center">
         <Image
@@ -21,18 +21,15 @@ const Hero = () => {
         <h1
           data-aos="fade-up"
           data-aos-delay="200"
-          className="text-2xl sm:text-4xl md:text-5xl lg:text-6xl mt-6 text-center font-bold tracking-wide"
+          className="text-2xl sm:text-4xl md:text-5xl lg:text-6xl mt-10 text-center font-bold tracking-wide"
         >
-          Creating web products,
-          <br />
-          <span className="text-cyan-200">brands and experiences.</span>
+          Gabriel Bergamo
         </h1>
         <h2
           data-aos="fade-up"
           data-aos-delay="400"
-          className="mt-5 text-sm px-2 text-center sm:text-2xl font-medium flex items-center"
+          className="mt-2 text-sm px-2 text-center sm:text-2xl font-medium flex items-center"
         >
-          Hi! I&apos;m Gabriel - A
           <span className="text-cyan-200 font-bold">
             <Typewriter
               options={{
@@ -45,19 +42,20 @@ const Hero = () => {
                 loop: true,
                 deleteSpeed: 50,
                 delay: 75,
-                wrapperClassName: "pl-2",
               }}
             />
           </span>
         </h2>
-        <button
+        <a
           data-aos="fade-up"
           data-aos-delay="600"
-          className="mt-6 px-10 py-4 bg-blue-800 hover:bg-blue-900 transition-all duration-300 cursor-pointer rounded-full text-lg font-medium"
+          className="mt-10 px-10 py-4 bg-blue-800 hover:bg-blue-900 transition-all duration-300 cursor-pointer rounded-full text-lg font-medium"
+          href="https://www.linkedin.com/in/gabriel-a-bergamo/"
+          target="_blank"
         >
           <span>See my Work</span>
           <BsArrowRight className="w-5 h-5 ml-2 inline-block" />
-        </button>
+        </a>
       </div>
     </div>
   );
