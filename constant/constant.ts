@@ -45,15 +45,25 @@ export const ServicesData = [
 
 export const ProjectsNames = [
   {
+    id: 1,
     name: "finance-app-api",
     url: "https://finance-app-api-xb8i.onrender.com/docs/",
+    thumb: "/images/project_thumbs/finance-app-api-thumb.webp",
+    description:
+      "API for Finance Gesture Saas | Node | Express | Prisma | Jest | PostgreSQL | Docker | JavaScript",
   },
   {
+    id: 2,
     name: "doutor-agenda",
     url: "https://doutor-agenda-chi.vercel.app/",
+    thumb: "/images/project_thumbs/doutor-agenda-thumb.webp",
+    description: "Clinic Management SaaS | Next.js | Typescript",
   },
   {
+    id: 3,
     name: "Stockly",
     url: "https://stockly-psi.vercel.app/",
+    thumb: "/images/project_thumbs/stockly-thumb.webp",
+    description: "Stock Management SaaS | Next.js | TypeScript",
   },
 ];
