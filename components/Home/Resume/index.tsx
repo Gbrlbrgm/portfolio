@@ -50,12 +50,12 @@ const Resume = () => {
             data-aos="zoom-in"
             data-aos-anchor-placement="top-center"
           >
-            {workExperience.map((item, index) => (
+            {workExperience.map((work, index) => (
               <ResumeCard
                 key={index}
-                Icon={item.icon}
-                role={item.role}
-                company={item.company}
+                Icon={work.icon}
+                role={work.role}
+                company={work.company}
               />
             ))}
           </div>
@@ -70,13 +70,13 @@ const Resume = () => {
             data-aos-anchor-placement="top-center"
             data-aos-delay="300"
           >
-            {educationExperience.map((item, index) => (
+            {educationExperience.map((education, index) => (
               <ResumeCard
                 key={index}
-                Icon={item.icon}
-                role={item.role}
-                company={item.company}
-                date={item.date}
+                Icon={education.icon}
+                role={education.role}
+                company={education.company}
+                date={education.date}
               />
             ))}
           </div>
