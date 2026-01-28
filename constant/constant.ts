@@ -48,11 +48,17 @@ export const ServicesData = [
   },
 ];
 
-export const ProjectsData = [
+export const ProjectsNames = [
   {
-    id: 1,
-    image: "/",
-    title: "Project Name",
-    category: "Apps, UI/UX",
+    name: "finance-app-api",
+    url: "https://finance-app-api-xb8i.onrender.com/docs/",
+  },
+  {
+    name: "doutor-agenda",
+    url: "https://doutor-agenda-chi.vercel.app/",
+  },
+  {
+    name: "Stockly",
+    url: "https://stockly-psi.vercel.app/",
   },
 ];
