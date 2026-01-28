@@ -7,7 +7,10 @@ import ParticleBackground from "./ParticleBackground";
 
 const Hero = () => {
   return (
-    <div className="relative mt-50 flex items-center justify-center text-white overflow-hidden flex-col">
+    <div
+      id="hero"
+      className="relative mt-50 flex items-center justify-center text-white overflow-hidden flex-col"
+    >
       <ParticleBackground />
       <div className="relative z-10 flex flex-col items-center">
         <Image

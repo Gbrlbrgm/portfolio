@@ -2,8 +2,7 @@
 import { NavLinks } from "@/constant/constant";
 import Link from "next/link";
 import React, { useEffect, useState } from "react";
-import { BiDownload } from "react-icons/bi";
-import { FaCode } from "react-icons/fa";
+import { FaCode, FaLinkedin } from "react-icons/fa";
 import { HiBars3BottomRight } from "react-icons/hi2";
 
 type Props = {
@@ -50,10 +49,14 @@ const Nav = ({ openNav }: Props) => {
           })}
         </div>
         <div className="flex items-center space-x-4">
-          <button className="px-8 py-3.5 text-sm cursor-pointer rounded-lg bg-blue-800 hover:bg-blue-900 transition-all duration-300 text-white flex items-center space-x-2">
-            <BiDownload className="w-5 h-5" />
-            <span>Download CV</span>
-          </button>
+          <a
+            href="https://www.linkedin.com/in/gabriel-a-bergamo/"
+            target="_blank"
+            className="px-8 py-3.5 text-sm cursor-pointer rounded-lg bg-blue-800 hover:bg-blue-900 transition-all duration-300 text-white flex items-center space-x-2"
+          >
+            <FaLinkedin className="w-5 h-5" />
+            <span>Visit LinkedIn</span>
+          </a>
           <HiBars3BottomRight
             onClick={openNav}
             className="w-8 h-8 cursor-pointer text-white lg:hidden"

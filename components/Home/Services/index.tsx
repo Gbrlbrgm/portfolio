@@ -5,6 +5,7 @@ import { ServicesData } from "@/constant/constant";
 const Services = () => {
   return (
     <div
+      id="services"
       data-aos="fade-in"
       data-aos-anchor-placement="top-center"
       className="pt-32 pb-16"
