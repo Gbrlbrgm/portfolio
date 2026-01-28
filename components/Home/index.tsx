@@ -5,7 +5,7 @@ import Services from "./Services";
 import Resume from "./Resume";
 import Projects from "./Projects";
 import Skills from "./Skills";
-import Contact from "./Contact";
+// import Contact from "./Contact";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
@@ -30,7 +30,7 @@ const Home = () => {
       <Resume />
       <Projects />
       <Skills />
-      <Contact />
+      {/* <Contact /> */}
     </div>
   );
 };
