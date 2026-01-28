@@ -1,7 +1,6 @@
 import React from "react";
 import ResumeCard from "./ResumeCard";
 import { FaCodepen, FaReact } from "react-icons/fa";
-import { BsDatabase } from "react-icons/bs";
 import { BiBadge } from "react-icons/bi";
 
 const Resume = () => {
@@ -17,9 +16,16 @@ const Resume = () => {
             data-aos="zoom-in"
             data-aos-anchor-placement="top-center"
           >
-            <ResumeCard Icon={FaCodepen} role="Fullstack Developer" />
-            <ResumeCard Icon={FaReact} role="Fullstack Developer" />
-            <ResumeCard Icon={BsDatabase} role="Fullstack Developer" />
+            <ResumeCard
+              Icon={FaReact}
+              role="Mid-Level Fullstack Developer"
+              company="Popcast"
+            />
+            <ResumeCard
+              Icon={FaCodepen}
+              role="Junior Fullstack .NET/React Developer"
+              company="Tecnologia Única"
+            />
           </div>
         </div>
         <div>
