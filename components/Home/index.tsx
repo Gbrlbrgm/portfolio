@@ -18,7 +18,7 @@ const Home = () => {
         easing: "ease",
         once: true,
         anchorPlacement: "top-bottom",
-        offset: 450,
+        offset: 150,
       });
     };
 
