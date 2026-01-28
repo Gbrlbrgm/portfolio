@@ -1,25 +1,8 @@
-import { getProjects } from "@/utils/getProjects";
+import { ProjectsNames } from "@/constant/constant";
 import Image from "next/image";
-import React, { useEffect, useState } from "react";
-
-interface GithubProject {
-  id: number;
-  name: string;
-  custom_image: string;
-  description: string;
-  url: string;
-}
+import React from "react";
 
 const Projects = () => {
-  const [projects, setProjects] = useState<GithubProject[]>([]);
-
-  useEffect(() => {
-    const fetchRepos = async () => {
-      const data = await getProjects();
-      setProjects(data);
-    };
-    fetchRepos();
-  }, []);
   return (
     <div id="projects" className="pt-16 pb-16">
       <h1
@@ -29,10 +12,10 @@ const Projects = () => {
         A small selection of recent <br /> <span>projects</span>
       </h1>
       <div className="w-[70%] mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 mt-16">
-        {projects.map((project) => (
+        {ProjectsNames.map((project) => (
           <div data-aos="fade-up" key={project.id}>
             <Image
-              src={project.custom_image}
+              src={project.thumb}
               alt="img"
               width={800}
               height={600}
