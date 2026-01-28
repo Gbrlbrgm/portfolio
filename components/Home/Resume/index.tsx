@@ -42,42 +42,43 @@ const Resume = () => {
     <div id="experiences" className="pt-20 pb-16">
       <div className="w-[90%] sm:w-[70%] mx-auto grid grid-cols-1 xl:grid-cols-2 gap-10">
         <div>
-          <h1 className="text-3xl sm:text-4xl font-bold text-white">
+          <h1
+            data-aos="fade-in"
+            className="text-center text-2xl md:text-4xl xl:text-5xl font-bold text-white"
+          >
             My Work <span>Experience</span>
           </h1>
-          <div
-            className="mt-10"
-            data-aos="zoom-in"
-            data-aos-anchor-placement="top-center"
-          >
-            {workExperience.map((work, index) => (
-              <ResumeCard
-                key={index}
-                Icon={work.icon}
-                role={work.role}
-                company={work.company}
-              />
+          <div className="mt-10">
+            {workExperience.map((work, i) => (
+              <div data-aos="slide-right" key={i}>
+                <ResumeCard
+                  Icon={work.icon}
+                  role={work.role}
+                  company={work.company}
+                />
+              </div>
             ))}
           </div>
         </div>
+      </div>
+      <div className="w-[90%] sm:w-[70%] mx-auto grid grid-cols-1 xl:grid-cols-2 gap-1 pt-10">
         <div>
-          <h1 className="text-3xl sm:text-4xl font-bold text-white">
+          <h1
+            data-aos="fade-in"
+            className="text-center text-2xl md:text-4xl xl:text-5xl font-bold text-white"
+          >
             My <span>Education</span>
           </h1>
-          <div
-            className="mt-10"
-            data-aos="zoom-out"
-            data-aos-anchor-placement="top-center"
-            data-aos-delay="300"
-          >
-            {educationExperience.map((education, index) => (
-              <ResumeCard
-                key={index}
-                Icon={education.icon}
-                role={education.role}
-                company={education.company}
-                date={education.date}
-              />
+          <div className="mt-10">
+            {educationExperience.map((education, i) => (
+              <div key={i} data-aos="slide-right">
+                <ResumeCard
+                  Icon={education.icon}
+                  role={education.role}
+                  company={education.company}
+                  date={education.date}
+                />
+              </div>
             ))}
           </div>
         </div>
