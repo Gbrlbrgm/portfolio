@@ -1,9 +1,43 @@
 import React from "react";
 import ResumeCard from "./ResumeCard";
 import { FaCodepen, FaReact } from "react-icons/fa";
-import { BiBadge } from "react-icons/bi";
+import { PiCertificate, PiLaptop, PiPen } from "react-icons/pi";
 
 const Resume = () => {
+  const workExperience = [
+    {
+      icon: FaReact,
+      role: "Mid-Level Fullstack Developer",
+      company: "Popcast",
+    },
+    {
+      icon: FaCodepen,
+      role: "Junior Fullstack .NET/React Developer",
+      company: "Tecnologia Única",
+    },
+  ];
+
+  const educationExperience = [
+    {
+      icon: PiLaptop,
+      role: "Professional Full-Stack Development Program",
+      company: "FSC - FullStackClub",
+      date: "2025-2026",
+    },
+    {
+      icon: PiPen,
+      role: "Professional Training in Front-End Development & Web Design",
+      company: "Origamid",
+      date: "2023-2024",
+    },
+    {
+      icon: PiCertificate,
+      role: "BSc in Computer Engineering",
+      company: "FIAP - Faculdade de Informática e Administração Paulista",
+      date: "2020 - 2024",
+    },
+  ];
+
   return (
     <div className="pt-20 pb-16">
       <div className="w-[90%] sm:w-[70%] mx-auto grid grid-cols-1 xl:grid-cols-2 gap-10">
@@ -16,16 +50,14 @@ const Resume = () => {
             data-aos="zoom-in"
             data-aos-anchor-placement="top-center"
           >
-            <ResumeCard
-              Icon={FaReact}
-              role="Mid-Level Fullstack Developer"
-              company="Popcast"
-            />
-            <ResumeCard
-              Icon={FaCodepen}
-              role="Junior Fullstack .NET/React Developer"
-              company="Tecnologia Única"
-            />
+            {workExperience.map((item, index) => (
+              <ResumeCard
+                key={index}
+                Icon={item.icon}
+                role={item.role}
+                company={item.company}
+              />
+            ))}
           </div>
         </div>
         <div>
@@ -38,11 +70,15 @@ const Resume = () => {
             data-aos-anchor-placement="top-center"
             data-aos-delay="300"
           >
-            <ResumeCard
-              Icon={BiBadge}
-              role="BSc in Computer Engineering"
-              date="2020 - 2024"
-            />
+            {educationExperience.map((item, index) => (
+              <ResumeCard
+                key={index}
+                Icon={item.icon}
+                role={item.role}
+                company={item.company}
+                date={item.date}
+              />
+            ))}
           </div>
         </div>
       </div>
