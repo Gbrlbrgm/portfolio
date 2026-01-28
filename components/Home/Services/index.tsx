@@ -11,7 +11,7 @@ const Services = () => {
       >
         My Services
       </h1>
-      <div className="w-[90%] sm:w-[70%] mx-auto grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-10 mt-16 items-center">
+      <div className="w-[90%] sm:w-[70%] mx-auto flex flex-col md:flex-row sm gap-10 mt-16 items-center justify-center">
         {ServicesData.map((service, i) => (
           <div data-aos="fade-right" data-aos-delay={i * 100} key={service.id}>
             <ServiceCard
