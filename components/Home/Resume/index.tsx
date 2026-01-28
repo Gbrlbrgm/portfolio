@@ -60,8 +60,6 @@ const Resume = () => {
             ))}
           </div>
         </div>
-      </div>
-      <div className="w-[90%] sm:w-[70%] mx-auto grid grid-cols-1 xl:grid-cols-2 gap-1 pt-10">
         <div>
           <h1
             data-aos="fade-in"
@@ -71,7 +69,7 @@ const Resume = () => {
           </h1>
           <div className="mt-10">
             {educationExperience.map((education, i) => (
-              <div key={i} data-aos="slide-right">
+              <div key={i} data-aos="slide-left">
                 <ResumeCard
                   Icon={education.icon}
                   role={education.role}
