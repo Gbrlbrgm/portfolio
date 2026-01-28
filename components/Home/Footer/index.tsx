@@ -1,10 +1,7 @@
+import { getYear } from "@/utils/getDate";
 import React from "react";
 
 const Footer = () => {
-  const getYear = () => {
-    return new Date().getFullYear();
-  };
-
   return (
     <div className="bg-blue-900/20 p-5">
       <h1 className="text-lg text-white/70 text-center">
