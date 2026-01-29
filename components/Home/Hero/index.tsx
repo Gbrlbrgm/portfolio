@@ -1,7 +1,7 @@
 "use client";
 import Image from "next/image";
 import React from "react";
-import { BsArrowRight } from "react-icons/bs";
+// import { BsArrowRight } from "react-icons/bs";
 import Typewriter from "typewriter-effect";
 import ParticleBackground from "./ParticleBackground";
 
@@ -49,7 +49,7 @@ const Hero = () => {
             />
           </span>
         </h2>
-        <a
+        {/* <a
           data-aos="fade-up"
           data-aos-delay="600"
           className="mt-10 px-10 py-4 bg-blue-800 hover:bg-blue-900 transition-all duration-300 cursor-pointer rounded-full text-lg font-medium"
@@ -58,7 +58,7 @@ const Hero = () => {
         >
           <span>See my Work</span>
           <BsArrowRight className="w-5 h-5 ml-2 inline-block" />
-        </a>
+        </a> */}
       </div>
     </div>
   );
