@@ -36,11 +36,7 @@ const Hero = () => {
           <span className="text-cyan-200 font-bold">
             <Typewriter
               options={{
-                strings: [
-                  "Fullstack Developer",
-                  "Software Engineer",
-                  "Web Developer",
-                ],
+                strings: ["Software Engineer", "Frontend Specialist"],
                 autoStart: true,
                 loop: true,
                 deleteSpeed: 50,
