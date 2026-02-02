@@ -14,7 +14,7 @@ const Hero = () => {
       <ParticleBackground />
       <div className="relative z-10 flex flex-col items-center">
         <Image
-          src="/images/profilepicture.webp"
+          src="/images/newprofilepicture.webp"
           alt="heroimage"
           width={150}
           height={150}
