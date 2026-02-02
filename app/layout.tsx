@@ -11,8 +11,8 @@ const font = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Gabriel Portfolio | Next.js",
-  description: "Portfolio built with Next.js",
+  title: "Gabriel Portfolio | Software Engineer | Frontend Specialist",
+  description: "Specialized in building high-performance web applications.",
 };
 
 export default function RootLayout({
